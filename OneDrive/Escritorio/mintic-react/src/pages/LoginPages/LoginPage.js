@@ -21,7 +21,7 @@ function LoginPage() {
                     </form>
                 </div>
                 <div className="card-footer text-center">
-                    <small className="text-muted">¿No tienes cuenta? <a href="#">Regístrate</a></small>
+                    <small className="text-muted">¿No tienes cuenta? <a href="/Register">Regístrate</a></small>
                 </div>
             </div>
         </div>
