@@ -2,8 +2,8 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { auth, googleProvider } from '../../firebase';
 import { signInWithPopup } from "firebase/auth";
-import './LoginPage.css';
 import { useNavigate } from "react-router-dom";
+import './LoginPage.css';
 
 
 function LoginPage() {
@@ -62,12 +62,12 @@ function LoginPage() {
         const user = result.user;
         Swal.fire({
           title: "¡Bienvenido!",
-          text: 'Sesion iniciada con Google: ${user.email}',
+          text: 'Sesion iniciada con Google: ${juanjosecaicedo0@gmail.email}',
           icon: "success",
           timer: 2000,
           showConfirmButton: false
         }).then(() => {
-          window.location.href = "/dashboard";
+          window.location.href = "/home";
         });
       })
       .catch((error) => {
@@ -80,7 +80,7 @@ function LoginPage() {
     <div className="container vh-100 d-flex justify-content-center align-items-center">
       <div className="card shadow-sm" style={{ maxWidth: '400px', width: '100%' }}>
         <div className="card-body">
-          <h3 className="card-title text-center mb-3">Iniciar Sesión</h3>
+          <h1 className="card-title text-center mb-3 my-tittle">SportGlam</h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="inputEmail" className="form-label">Correo electrónico</label>
@@ -90,7 +90,7 @@ function LoginPage() {
                 id="inputEmail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="usuario@ejemplo.com"
+                placeholder="Telefono, correo electronico"
                 required
               />
             </div>
@@ -105,6 +105,7 @@ function LoginPage() {
                 placeholder="Contraseña"
                 required
               />
+            
             </div>
             <div className="form-check mb-3">
               <input
@@ -115,14 +116,16 @@ function LoginPage() {
               <label className="form-check-label" htmlFor="rememberCheck">
                 Recuérdame
               </label>
+              
             </div>
             <div className="text-center">
-              <button href="/home" type="submit" className="btn btn-primary w-100">Entrar</button>
+              <button href="/home" type="submit" className="btn btn-warning w-100 mb-2">Entrar</button>
+            </div>
+            <div className="text-center">
+              <button href="/home" type="button" onClick={handleGoogleLogin} className="btn btn-danger w-100">Inicar sesion con google</button>
             </div>
 
-            <button type="button" onClick={handleGoogleLogin}>
-              Iniciar sesion con Google
-              </button>
+            
             <br />
             <div className="text-center">
               <small className="text-muted">

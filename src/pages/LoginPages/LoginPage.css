@@ -1,0 +1,114 @@
+/* src/pages/LoginPage.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #2A7B9B;
+    background: #5F5F5E;
+    background: linear-gradient(100deg, rgba(95, 95, 94, 1) 10%, rgba(201, 201, 201, 1) 48%, rgba(195, 184, 158, 1) 84%);
+    
+}
+
+.login-container {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a58c56;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #dcdcdc;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a58c56;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-divider {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.login-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.forgot-password,
+.register-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.register-text span {
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.card, .card-shadow {
+    background-color:  transparent !important;
+}
+
+.card-body{
+    /*opacity: 0.5;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 18px 35px !important;
+    border-radius: 7px;
+}
+
+.my-tittle {
+    font-family: 'Times New Roman', Times, serif;
+}
