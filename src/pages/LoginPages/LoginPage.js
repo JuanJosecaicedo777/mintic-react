@@ -62,12 +62,12 @@ function LoginPage() {
         const user = result.user;
         Swal.fire({
           title: "¡Bienvenido!",
-          text: 'Sesion iniciada con Google: ${juanjosecaicedo0@gmail.email}',
+          text: `Sesion iniciada con Google: ${user.email}`,
           icon: "success",
           timer: 2000,
           showConfirmButton: false
         }).then(() => {
-          window.location.href = "/home";
+          window.location.href = "/dashboard";
         });
       })
       .catch((error) => {
@@ -119,7 +119,8 @@ function LoginPage() {
               
             </div>
             <div className="text-center">
-              <button href="/home" type="submit" className="btn btn-warning w-100 mb-2">Entrar</button>
+
+              <button href="/home" type="submit" className="btn btn-warning w-100 mb-2 btn-signin">Entrar</button>
             </div>
             <div className="text-center">
               <button href="/home" type="button" onClick={handleGoogleLogin} className="btn btn-danger w-100">Inicar sesion con google</button>

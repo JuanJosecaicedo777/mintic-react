@@ -18,13 +18,38 @@ function DashboardPage() {
     }
   };
 
+
+  
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Bienvenido</h1>
-      {user && <p>{user.email}</p>}
-      <button onClick={handleLogout}>Cerrar sesión</button>
-    </div>
-  );
+    <div className='gradient'>
+
+
+            <header className="p-3 border-bottom">
+
+                <div className="container">
+                  <nav class="navbar">
+                    <div class="container-fluid">
+                      <a class="navbar-brand ">SportGlam</a>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                      <button onClick={handleLogout} className="btn btn-primary">Cerrar Sesión</button>
+                    </div>
+                  </nav>
+            
+                </div>
+            </header>
+
+            <div className="d-flex justify-content-center align-items-center vh-100">
+                <p className="fs-1 text-primary fw-bold">Bienvenido a SportGlam</p>
+            </div>
+
+
+        </div>
+    );
 }
+
+
 
 export default DashboardPage;
