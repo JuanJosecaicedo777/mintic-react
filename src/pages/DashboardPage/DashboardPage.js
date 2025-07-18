@@ -99,14 +99,14 @@ function DashboardPage() {
   return (
     <div className='gradient'>
       {/* Header */}
-      <header className="p-3 border-bottom">
-        <div className="container">
+      <header className="p-3 border-bottom"> 
+        <div className="container"> 
           <nav className="navbar">
             <div className="container-fluid">
 
 
               {/* ✅ Corregido: Link con to="/" en lugar de <a> */}
-              <Link to="/" className="navbar-brand">SportGlam</Link>
+              <h1><Link to="/" className="navbar-brand" style={{ color: "#f9f9f9ff"}}>SportGlam</Link></h1>
               <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
                 <button className="btn btn-outline-success" type="submit">Buscar</button>
@@ -119,7 +119,7 @@ function DashboardPage() {
 
       {/* Bienvenida */}
       <div className="d-flex justify-content-center align-items-center mt-4">
-        <p className="fs-1 text-primary fw-bold">Bienvenido a SportGlam</p>
+      <p className="fs-1 fw-bold" style={{ color: "#121212ff" }}>Bienvenido a SportGlam</p> 
       </div>
 
       {/* Tabla de Auxiliares */}

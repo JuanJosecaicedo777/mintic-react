@@ -1,8 +1,12 @@
 .gradient {
-    background: #5F5F5E;
-    background: linear-gradient(81deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); 
-    }
+    background: #918b6a;
+    background: linear-gradient(0deg,rgba(145, 139, 106, 1) 31%, rgba(186, 168, 114, 1) 65%, rgba(245, 206, 122, 1) 95%);
+
+
+}
 
 .my-tittle {
     font-family: 'Times New Roman', Times, serif;
 }
+
+
