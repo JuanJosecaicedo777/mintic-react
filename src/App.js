@@ -7,6 +7,7 @@ import Dashboard from './pages/DashboardPage/DashboardPage';
 import MyComponent from './pages/Playground/useState';
 import MensajeCambio from './pages/Playground/useEffect';
 import ClickTracker from './pages/Playground/useRef';
+import ResetPasswordPage from './pages/ResetPasswordPage/ResetPasswordPage';
 
 import NotFoundPage from './pages/Components/NotFoundPage';
 import ProtectedRoute from './pages/Components/ProtectedRoute';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/MyComponent" element={<MyComponent />} />
         <Route path="/Contador" element={<MensajeCambio />} />
         <Route path="/click" element={<ClickTracker />} />
+        <Route path="Reset" element={<ResetPasswordPage />} />
 
         {/* Ruta protegida con Firebase Auth */}
         <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />

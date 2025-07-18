@@ -103,6 +103,8 @@ function DashboardPage() {
         <div className="container">
           <nav className="navbar">
             <div className="container-fluid">
+
+
               {/* ✅ Corregido: Link con to="/" en lugar de <a> */}
               <Link to="/" className="navbar-brand">SportGlam</Link>
               <form className="d-flex" role="search">
@@ -123,7 +125,7 @@ function DashboardPage() {
       {/* Tabla de Auxiliares */}
       <Container className="mt-4">
         <h2 className="page-title text-center mb-4">
-          AUXILIARES DE SERVICIOS REGISTRADOS EN BRILLA
+          PERSONAL DE SERVICIO REGISTRADOS EN SPORTGLAM
         </h2>
         <div className="table-container">
           <Table striped bordered hover responsive className="tabla-auxiliares">
